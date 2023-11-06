@@ -17,8 +17,7 @@
 
 int main() {
   int var;
-  char helper;
-  if(scanf("%i%c", &var, &helper) == args_num && helper == '\n') {
+  if(scanf("%i", &var) == args_num) {
     // ... something good
   } else {
     // ... meh 
