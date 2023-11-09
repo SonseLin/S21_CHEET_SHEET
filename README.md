@@ -36,6 +36,6 @@ int main() {
 **clang-format -n file.c**.</br>
 Проверяют на эффективность кода утилитой **cppcheck**. Показывает "лишние переменные", более близкие области определения переменных к месту их использования и тд в целях оптимизации</br>
 **cppcheck --enable=all --suppress=missingIncludeSystem file.c file.h**</br>
-Проверка на утечки "file.c" **valgrind**</br>
-**valgrind --tool=memcheck --leak-check=yes file.c**</br>
+Проверка на утечки "file.out" **valgrind**</br>
+**valgrind --tool=memcheck --leak-check=yes file.out**</br>
 > P.S. Данные по результатам первого экзамена и будет дополняться в процессе
