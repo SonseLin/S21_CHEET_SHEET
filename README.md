@@ -69,6 +69,8 @@ int *realloc_lacosta(int *data, int size, int old_size) {
 Проверяют на соответствие стилям согласно **Google C формат**.</br>
 Для стандартизации своего кода достаточно скопировать файл .clang-format из /materials/linters/ в рабочую директорию с *.c и прописать </br>
 **clang-format -n file.c**.</br>
+Мутант команда на рекурсивную проверку всех си/хи файлов по директориям ниже
+**find . -name ".c" -o -name ".h" | xargs clang-format -n**. </br>
 Проверяют на эффективность кода утилитой **cppcheck**. Показывает "лишние переменные", более близкие области определения переменных к месту их использования и тд в целях оптимизации</br>
 **cppcheck --enable=all --suppress=missingIncludeSystem file.c file.h**</br>
 Проверка на утечки "file.out" **valgrind**</br>
